@@ -5,7 +5,7 @@ formMessage.addEventListener("submit", (e) => {
   const formData = new FormData(formMessage);
   const formValue = Object.fromEntries(formData);
 
-  fetch("http://localhost:8080/message", {
+  fetch("https://message-server-cue3.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
