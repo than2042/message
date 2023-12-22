@@ -19,7 +19,9 @@ formMessage.addEventListener("submit", async function (e) {
 });
 
 async function displayMessage() {
-  const response = await fetch("http://localhost:8080/message");
+  const response = await fetch(
+    "https://message-server-cue3.onrender.com/message"
+  );
   const messages = await response.json();
 
   messages.map((item) => {
